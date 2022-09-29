@@ -1,0 +1,39 @@
+configuration {
+	modi: "combi,window,run,ssh";
+	display-combi: "";
+}
+
+@theme "/dev/null"
+
+* {
+    black: #0d0d0d;
+    grey: #6b6b6b;
+    white: #ffffff;
+
+    background-color: @black;
+    text-color: @grey;
+}
+
+listview {
+    lines: 10;
+}
+
+entry {
+  padding: 16px;
+  text-color: @white;
+}
+
+element {
+  padding: 16px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element selected {
+  background-color: @grey;
+  text-color: @white;
+}
+

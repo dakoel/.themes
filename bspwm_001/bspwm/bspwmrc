@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+nitrogen --set-zoom-fill ~/.config/bspwm/wallpaper.png
+picom &
+polybar top &
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d 1 2 3 4 5
+
+bspc config border_width        0
+bspc config window_gap          10
+bspc config top_padding         -12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a firefox desktop=^2 follow=on
+
+pgrep kitty || kitty &
+
+theme_directory=$(dirname $(dirname $(realpath $0)))
+xss-lock --transfer-sleep-lock -- $theme_directory/scripts/lock_screen.sh &

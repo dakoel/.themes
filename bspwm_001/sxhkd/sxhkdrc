@@ -1,0 +1,45 @@
+# Focus node
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# Focus desktop
+super + {_,shift + }{1-5}
+	bspc {desktop -f,node -d} '^{1-5}' --follow
+
+# Close node
+super + shift + q
+	bspc node -c
+
+# Rotate
+super + {r,shift + r}
+    bspc node @parent -R {90,-90}
+
+# Set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Move floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Resize
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# Open terminal
+super + Return
+	kitty
+
+# Program launcher (rofi)
+super + @space
+	rofi -show
+
+# Take screenshot (scrot)
+super + {period}
+	scrot -F ~/Screenshots/%Y-%m-%d-%T-screenshot.png
+
+# Reload configuration files
+super + Escape
+	pkill -USR1 -x sxhkd
