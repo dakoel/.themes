@@ -15,10 +15,10 @@
 
 ## Screenshots
 
-<img align="center" height="350px" width="auto" src="bspwm_001/screenshots/01.png">
+<img align="center" height="350px" width="auto" src="./screenshots/01.png">
 <br/>
 <br/>
-<img align="center" height="350px" width="auto" src="bspwm_001/screenshots/02.png">
+<img align="center" height="350px" width="auto" src="./screenshots/02.png">
 <br/>
 <br/>
-<img align="center" height="350px" width="auto" src="bspwm_001/screenshots/03.png">
+<img align="center" height="350px" width="auto" src="./screenshots/03.png">
