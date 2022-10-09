@@ -3,9 +3,7 @@ type = internal/battery
 battery = BAT0
 adapter = AC
 poll-interval = 5
-low-at = 70
-format-discharging-prefix = "%{T4}%{T-}   "
-format-discharging-prefix-foreground = ${colors.green}
+format-discharging = %{F#4ddd00}<ramp-capacity>%{F-} <label-discharging>
 label-discharging = %percentage%%
 format-charging-prefix = "%{T4}%{T-}   "
 format-charging-prefix-foreground = ${colors.green}
@@ -13,6 +11,11 @@ label-charging = %percentage%%
 format-full-prefix = "%{T4}%{T-}   "
 format-full-prefix-foreground = ${colors.green}
 label-full = %percentage%%
+ramp-capacity-0 = "%{T4}%{T-}  "
+ramp-capacity-1 = "%{T4}%{T-}  "
+ramp-capacity-2 = "%{T4}%{T-}  "
+ramp-capacity-3 = "%{T4}%{T-}  "
+ramp-capacity-4 = "%{T4}%{T-}  "
 
 [module/bspwm]
 type = internal/bspwm
