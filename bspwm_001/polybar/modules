@@ -11,10 +11,10 @@ label-charging = %percentage%%
 format-full-prefix = "%{T4}%{T-}   "
 format-full-prefix-foreground = ${colors.green}
 label-full = %percentage%%
-ramp-capacity-0 = "%{T4}%{T-}  "
-ramp-capacity-1 = "%{T4}%{T-}  "
-ramp-capacity-2 = "%{T4}%{T-}  "
-ramp-capacity-3 = "%{T4}%{T-}  "
+ramp-capacity-0 = "%{T4}%{T-}  "
+ramp-capacity-1 = "%{T4}%{T-}  "
+ramp-capacity-2 = "%{T4}%{T-}  "
+ramp-capacity-3 = "%{T4}%{T-}  "
 ramp-capacity-4 = "%{T4}%{T-}  "
 
 [module/bspwm]
